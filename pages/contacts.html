@@ -3,15 +3,46 @@
 <head>
     <meta charset="utf-8">
     <title>Моя первая веб-страница</title>
-</head>
-<body>
+    <style>
+    </head>
+    
+   <body>
+       body {
+       margin: 0; /* Убираем отступы */
+      }
+      h1 {
+       background: #0b0b0b; /* Цвет фона блока */ 
+       color: #ffe; /* Цвет текста */ 
+       margin: 0; /* Нулевые отступы вокруг текста */ 
+       padding: 5px; /* Поля вокруг текста */ 
+      }
+      body {
+    max-width: 1820px; /* Максимальная ширина страницы в пикселах */ 
+      }
+      body {
+    background: #030303e4 url(images/black.html); /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+   }
+   body { 
+     font-family: Arial, sans-serif; /* Рубленый шрифт */ 
+    }
+    .letter { 
+     color: rgba(239, 156, 11, 0.989); /* Красный цвет символов */ 
+     font-size: 200%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+     position: relative; /* Относительное позиционирование */ 
+     top: 5px; /* Сдвиг сверху */ 
+    }
+   </style>
     <header>
-        <a href="../index.html">Главная</a>
-        <a href="about.html">О нас</a>
-        <a href="#">Контакты</a>
+        <a href="#"><font size="4" color="black" face="Arial"><span class="letter">Главная</font></span></a>
+        <a href="pages/about.html"><font size="4" color=black" face="Arial"><span class="letter">О нас</font></span></a>
+        <a href="pages/contacts.html"><font size="4" color="black" face="Arial"><span class="letter">Контакты</font></span></a>
     </header>
+    <br>
     <main>
         <h1>Как нас найти</h1>
+        <br>
         <img src="images/map2.png" alt=Карта width="150" height="140">
         
         <address>

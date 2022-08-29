@@ -5,20 +5,56 @@
     <meta charset="utf-8">
     <!-- Задает заголовок для страницы используя атрибут title -->
     <title>О нас - Моя первая веб-страница</title>
-</head>
-<body>
+    <style>
+    </head>
+   
+   <body>
+       body {
+       margin: 0; /* Убираем отступы */
+      }
+      h1 {
+       background: #000000; /* Цвет фона блока */ 
+       color: #ffe; /* Цвет текста */ 
+       margin: 0; /* Нулевые отступы вокруг текста */ 
+       padding: 8px; /* Поля вокруг текста */ 
+      }
+      .brd {
+    border: 4px double black; /* Параметры границы */
+    background: rgba(233, 116, 7, 0.884); /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+  }
+  body {
+    max-width: 1820px; /* Максимальная ширина страницы в пикселах */ 
+   }
+   body {
+    background: #050505 url(images/black.html); /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+   }
+   body { 
+     font-family: Arial, sans-serif; /* Рубленый шрифт */ 
+    }
+    .letter { 
+     color: rgba(239, 156, 11, 0.989); /* Красный цвет символов */ 
+     font-size: 200%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+     position: relative; /* Относительное позиционирование */ 
+     top: 5px; /* Сдвиг сверху */ 
+    }
+   </style>
     <header>
-        <a href="../index.html">Главная</a>
-        <a href="#">О нас</a>
-        <a href="contacts.html">Контакты</a>
+        <a href="#"><font size="4" color="black" face="Arial"><span class="letter">Главная</font></span></a>
+        <a href="pages/about.html"><font size="4" color=black" face="Arial"><span class="letter">О нас</font></span></a>
+        <a href="pages/contacts.html"><font size="4" color="black" face="Arial"><span class="letter">Контакты</font></span></a>
     </header>
+    <br>
     <main>
         <h1>О нас</h1>
-        <p>Мы лучшие в своем деле.</p>
-        <img src="https://static.tildacdn.com/tild6539-3361-4761-a434-353330643930/skillfactory_logo_bl.svg" alt=Logo width="140" height="55">
+        <p>Мы лучшие в своем деле!</p>
+        <img src="https://static.tildacdn.com/tild6539-3361-4761-a434-353330643930/skillfactory_logo_bl.svg" alt=Logo width="390" height="100">
         <h3>Оставить заявку на курс</h3>
 <!-- Создаём форму без обработчика и метода -->
     <!-- Поле ввода имени -->
+    <div class="brd">
     <input name="name" type="text" placeholder="Ваше имя"/>
     <br>
     <br>
@@ -27,15 +63,17 @@
     <br>
     <br>
     <!-- Поле ввода для темы сообщения -->
-    <input size="30" name="header" type="text" placeholder="Тема"/>
+    <input size="20" name="header" type="text" placeholder="Тема"/>
     <br>
     <br>
     <!-- Текстовое поле для самого сообщения -->
     <textarea cols="30" name="message" rows="5"> 
     </textarea>
     <br>
+    <br>
     <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
     <input type="submit" value="Отправить" />
+</div>
   </form>
     </main>
     <footer>

@@ -4,35 +4,74 @@
 <head>
     <meta charset="utf-8">
     <title>Моя первая веб-страница</title>
- </head>
+   <style>
+</head>
 
-<body>
+<body
+    body {
+   margin: 0; /* Убираем отступы */
+  }
+  h1 {
+   background: #020202; /* Цвет фона блока */ 
+   color: #ffe; /* Цвет текста */ 
+   margin: 0; /* Нулевые отступы вокруг текста */ 
+   padding: 8px; /* Поля вокруг текста */ }
+   .brd {
+    border: 4px double black; /* Параметры границы */
+    background: rgba(31, 7, 60, 0.249); /* Цвет фона */
+    padding: 10px; /* Поля вокруг текста */
+  }
+ /* body {
+    max-width: 820px; /* Максимальная ширина страницы в пикселах */ 
+   /*}*/
+   body {
+    background: #050505 url(images/black.html); /* Цвет фона и путь к файлу */
+    color: #fff; /* Цвет текста */
+   }
+   body { 
+     font-family: Arial, sans-serif; /* Рубленый шрифт */ 
+    }
+    .letter { 
+     color: rgba(239, 156, 11, 0.989); /* Красный цвет символов */ 
+     font-size: 200%; /* Размер шрифта в процентах */ 
+     font-family: serif; /* Шрифт с засечками */ 
+     position: relative; /* Относительное позиционирование */ 
+     top: 5px; /* Сдвиг сверху */ 
+    }
+
+</style>
     <header>
-        <a href="#">Главная cтраница</a>
-        <a href="pages/about.html">О нас</a>
-        <a href="pages/contacts.html">Контакты</a>
+        <a href="#"><font size="4" color="black" face="Arial"><span class="letter">Главная</font></span></a>
+        <a href="pages/about.html"><font size="4" color=black" face="Arial"><span class="letter">О нас</font></span></a>
+        <a href="pages/contacts.html"><font size="4" color="black" face="Arial"><span class="letter">Контакты</font></span></a>
     </header>
-
+<br>
     <main>
         <h1>Моя первая веб-страница</h1>
-        <h2>Про меня</h2>
-        <img src="images/Woman.png" alt=Фото width="150" height="140">
-        <p>Меня зовут Анастасия. Я работаю <strong>IT Project Manager.</strong> 
-            Основной инженерный опыт был cвязан с Telecom.</p>
-        <p>Живу в Москве. Люблю фотографировать и ходить в театр.</p>
+        <h2>Обо мне</h2>
+        <p>
+            <img align="justify" src="images/Woman.png" alt=Photo width="254" height="272">
+            <!-- <img src="images/PM.jpg" alt=Photo width="200" height="1272"> -->
+            <p align="left">Привет! Меня зовут Анастасия. Я работаю в IT на позиции <strong>IT Project Manager.</strong> </p>
+            <p align="left">Основной инженерный опыт был cвязан с Telecom.</p>
+            <p align="left">Живу в Москве. Люблю фотографировать и ходить в театр.</p>
         <h2>Чему я хочу научиться</h2>
         <p> Я надеюсь, что <em>этот</em> курс поможет:
-            <br>
-            - структурировать знания по Web разработке,
-            <br>
-            - проанализировать ошибки,
-            <br>
-            - разработать свой сайт с нуля по своим требованиям 
-            <br>
-            <br>
-            Хочу повысить эффективность cвоей работы с командой.</p>
+            <ul>
+            <li>структурировать знания по Web разработке,</li> 
+            <li>проанализировать ошибки,</li> 
+            <li>разработать свой сайт с нуля по своим требованиям.</li>
+            </ul> 
+            </p>
+            <div class="brd">
+            <em>PS</em>: Хочу повысить эффективность cвоей работы с командой.
+        </div>
+            <p>
+                <img src="images/web_development.jpeg" alt=Web width="130" height="70">
+            </p>
     </main>
     <footer>
+        <br>
         <span>&copy;&nbsp;Skillfactory</span>
     </footer>
 </body>
