@@ -1,0 +1,5 @@
+Проверяла на https://validator.w3.org/nu/
+Результат: 
+index.html - ошибки из-за использования align (не стала править)
+about.html - нет ошибок
+contacts.html - нет ошибок
